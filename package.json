@@ -1,0 +1,18 @@
+{
+  "name": "stardew-save-editor",
+  "version": "1.0.0",
+  "description": "Stardew Valley save file editor",
+  "main": "edit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "inesryder",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "prompt": "^1.1.0"
+  },
+  "bin": {
+    "stardew": "edit.js"
+  }
+}
