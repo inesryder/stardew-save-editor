@@ -10,7 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "colors": "^1.4.0",
-    "prompt": "^1.1.0"
+    "prompt": "^1.1.0",
+    "xml-js": "^1.6.11"
   },
   "bin": {
     "stardew": "edit.js"
