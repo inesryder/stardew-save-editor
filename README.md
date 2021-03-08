@@ -20,6 +20,7 @@ Prerequisite : NodeJS and NPM
 Once the program is opened, you will have three editions options :
 - Change your name : `name Harry`,
 - Change your amount of money : `money 50670`,
+- Change the weather to rain : `rain true`,
 - Or change the amount of an item in your inventory : `4 50` (a numbered list will be shown beforehand).
 
 Once done with the edition, type in `save` to generate the new save file.

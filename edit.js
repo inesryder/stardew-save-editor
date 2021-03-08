@@ -45,6 +45,7 @@ const printSave = (save) => {
     console.log('\n\n\********************');
     console.log('Name: ', save.SaveGame.player.name._text);
     console.log('Money: ', save.SaveGame.player.money._text);
+    console.log('Rain:', save.SaveGame.isLightning._text)
     console.log('Now for Item\n--------------------');
     save.SaveGame.player.items.Item.forEach((item, index) => {
         item._attributes['xsi:type'] && item._attributes['xsi:type'] !== 'Object' && console.log(index + '.', item.DisplayName._text.grey)
@@ -88,6 +89,13 @@ const start = async () => {
                     const name = action.split(' ')[1];
                     save.SaveGame.player.name._text = name
                     console.log('Edit Name'.green)
+                }
+
+                // Edit Rain
+                if (action.match(/^rain true|false$/)) {
+                    const rain = action.split(' ')[1];
+                    save.SaveGame.isLightning._text = rain
+                    console.log('Edit Rain'.green)
                 }
             }
         }
